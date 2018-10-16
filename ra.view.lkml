@@ -30,4 +30,27 @@ view: ra {
     type: count
     drill_fields: []
   }
+
+  #MEASURES
+
+  measure: murder_average {
+    type: average
+    sql: ${murder} ;;
+  }
+
+  measure: murder_sum {
+    type: sum
+    sql: ${murder} ;;
+  }
+
+  measure: murder_min {
+    type: min
+    sql: ${murder} ;;
+  }
+
+  measure: murder_max {
+    type: max
+    sql: ${murder} ;;
+  }
+
 }

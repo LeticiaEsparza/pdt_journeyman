@@ -11,3 +11,5 @@ datagroup: pdt_padawan_default_datagroup {
 persist_with: pdt_padawan_default_datagroup
 
 explore: ra {}
+
+explore: lab_2_pdt {}
