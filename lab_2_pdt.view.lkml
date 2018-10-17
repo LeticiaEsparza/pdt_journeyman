@@ -5,7 +5,9 @@ view: lab_2_pdt {
         AVG(ra.murder ) AS murder_average,
         MAX(ra.murder ) AS murder_max,
         MIN(ra.murder ) AS murder_min,
-        COALESCE(SUM(ra.murder ), 0) AS murder_sum
+        COALESCE(SUM(ra.murder ), 0) AS murder_sum,
+        current_timestamp
+
       FROM public.ra  AS ra
 
       GROUP BY 1
@@ -43,6 +45,11 @@ view: lab_2_pdt {
   dimension: murder_sum {
     type: number
     sql: ${TABLE}.murder_sum ;;
+  }
+
+  dimension: current_timestamp {
+    type: string
+    sql: ${TABLE}.current_timestamp ;;
   }
 
   set: detail {
