@@ -106,7 +106,7 @@ view: levatas_events {
     ;;
   }
 
-  dimension: dynamic_distance{
+  dimension: dynamic_distance {
     type: distance
     start_location_field: dynamic_start_location
     end_location_field: location
