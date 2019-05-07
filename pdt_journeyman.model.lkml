@@ -2,6 +2,7 @@ connection: "postgres-databasesme"
 
 # include all the views
 include: "*.view"
+include: "*.dashboard"
 
 datagroup: pdt_padawan_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
@@ -13,3 +14,5 @@ persist_with: pdt_padawan_default_datagroup
 explore: ra {}
 
 explore: lab_2_pdt {}
+
+explore: levatas_events {}
